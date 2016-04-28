@@ -15,6 +15,9 @@ public class MinWeatherByCityUA implements Callable<Float> {
     private float result;
     private float celsiy =  273.15f;
 
+    public MinWeatherByCityUA() {
+    }
+
     public MinWeatherByCityUA(String city) {
         this.city = city;
         this.country = "UA";

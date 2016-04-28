@@ -15,6 +15,9 @@ public class WeatherByCityUA implements Callable<Float> {
     private float result;
     private float celsiy =  273.15f;
 
+    public WeatherByCityUA() {
+    }
+
     public WeatherByCityUA(String city) {
         this.city = city;
         this.country = "UA";

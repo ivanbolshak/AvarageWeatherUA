@@ -9,7 +9,6 @@ import java.util.concurrent.Future;
  * Created by Ivan on 28.04.2016.
  */
 public class AvarageWeatherByCity {
-    private Future<Float> temprerture;
     private ExecutorService pool = Executors.newFixedThreadPool(10);
     private String city = "Dnipropetrovsk";
     private Future<Float> temprature = pool.submit(new WeatherByCityUA(city));

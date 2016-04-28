@@ -15,6 +15,10 @@ public class MaxWeatherByCityUA implements Callable<Float> {
     private float result;
     private float celsiy =  273.15f;
 
+    public MaxWeatherByCityUA() {
+
+    }
+
     public MaxWeatherByCityUA(String city) {
         this.city = city;
         this.country = "UA";
